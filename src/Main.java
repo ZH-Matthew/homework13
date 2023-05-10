@@ -14,11 +14,12 @@ public class Main {
         Ravenclaw marcusBelby = new Ravenclaw("Маркус", (int) (Math.random() * 100), (int) (Math.random() * 100), (int) (Math.random() * 100), (int) (Math.random() * 100), (int) (Math.random() * 100), (int) (Math.random() * 100));
 
         System.out.println(harryPotter);
-        Gryffindor.compare(hermioneGranger, ronWeasley);
-        Slytherin.compare(dracoMalfoy, gregoryGoyle);
-        Hufflepuff.compare(zachariasSmith, cedricDiggory);
-        Ravenclaw.compare(padmaPatil, marcusBelby);
-        Hogwarts.compare(harryPotter, dracoMalfoy);
-        //Slytherin.avadakedavra(); //Мальчик, который выжил... Пришел умереть.
+        Hogwarts.compareSpecific(harryPotter,ronWeasley);
+        Hogwarts.compareSpecific(grahamMontagu,dracoMalfoy);
+        Hogwarts.compareGeneral(harryPotter,dracoMalfoy);
+        System.out.println(harryPotter);
+        System.out.println(padmaPatil);
+        System.out.println(cedricDiggory);
+
     }
 }
